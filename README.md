@@ -12,10 +12,7 @@
 
 在根目录下：
 
-先安装依赖： `npm install`，再执行`npm run install-all`为所有项目安装依赖，最后执行`npm run start-all`即可启动所有的项目。
-
-`npm run build-all`可以打包所有`vue`项目，`jQuery`项目不需要打包。
-
+先安装依赖： `pnpm install`，再执行`pnpm run install-all`为所有项目安装依赖，最后执行`pnpm run start-all`即可启动所有的项目。
 
 ## 分支介绍
 

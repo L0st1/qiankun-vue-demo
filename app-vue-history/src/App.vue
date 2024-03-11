@@ -4,9 +4,24 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <button @click="srcollToTest">测试scrollTo滚动</button>
+    <button @click="srcollIntoViewTest">测试srcollIntoView滚动</button>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    srcollToTest: () => {
+      window.scrollTo({ top: 1000 });
+    },
+    srcollIntoViewTest: () => {
+      //
+    }
+  },
+}
+</script>
 
 <style>
 #app {
@@ -15,6 +30,16 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 3000px;
+}
+
+button {
+  position: absolute;
+  bottom: 10px;
+}
+
+button:nth-of-type(1) {
+  margin-left: 300px;
 }
 
 #nav {
